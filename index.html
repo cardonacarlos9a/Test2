@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Artist Landing Page</title>
+</head>
+<body>
+
+	<header>
+		<h1>Welcome to My Artist Page</h1>
+		<nav>
+			
+				<a href="#">Home</a>
+				<a href="#">Gallery</a>
+				<a href="#contact">Contact</a>
+			
+		</nav>
+	</header>
+
+	<main>
+		<h2>About Me</h2>
+		<p>I am a talented artist specializing in landscapes and seascapes. My paintings capture the beauty and tranquility of the natural world.</p>
+		<p>Take a look at my <a href="#">gallery</a> to see some of my latest works.</p>
+
+        <section>
+            <h2>My Talents</h2>
+            <ul>
+                <li>
+                    Sea
+                </li>
+                <li>
+                    Night Pics
+                </li>
+            </ul>
+        </section>
+
+		<h2>My Latest Work</h2>
+        <ol>
+            <li>
+                Pictures of cartagena
+            </li>
+            <li>
+                Pictures of San Andres
+            </li>
+        </ol>
+
+		<h2 id="contact">Contact Me</h2>
+		<form onsubmit=" return simularAccionFormulario()">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+            <select name="city" id="city">
+                <option value="armenia">Armenia</option>
+                <option value="bogota">Bogota</option>
+                <option value="medellin">Medellin</option>
+                <option value="buenaventura">Buenaventura</option>
+            </select>
+
+			<input type="submit" value="Submit">
+		</form>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 My Artist Page</p>
+	</footer>
+<script type="js" src="./accion-formulario.js"></script>
+</body>
+</html>
