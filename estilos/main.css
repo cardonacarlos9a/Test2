@@ -1,0 +1,23 @@
+.main-container{
+    background-color: black;
+}
+.aboutMe-section{
+    display: grid;
+    align-items: center;
+}
+.aboutMe-picture{
+    height: 20vw;
+}
+
+.aboutMe-imagen {
+    padding: 5%;
+    justify-self: center;
+}
+
+@media (min-width:600px){
+    .aboutMe-section{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 60% 40%;
+    }
+}

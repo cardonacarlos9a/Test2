@@ -1,77 +1,103 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Artist Landing Page</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilo.css">
 </head>
 <body>
-
-	<header>
-		<h1>Welcome to My Artist Page</h1>
-		<nav>
-			
-				<a href="#">Home</a>
-				<a href="#">Gallery</a>
-				<a href="#contact">Contact</a>
-			
-		</nav>
-	</header>
-
-	<main>
-		<h2>About Me</h2>
-		<p>I am a talented artist specializing in landscapes and seascapes. My paintings capture the beauty and tranquility of the natural world.</p>
-		<p>Take a look at my <a href="#">gallery</a> to see some of my latest works.</p>
-
-        <section>
-            <h2>My Talents</h2>
-            <ul>
-                <li>
-                    Sea
-                </li>
-                <li>
-                    Night Pics
+    <header class="cabecera-header">
+        <img class="icon" src="./imagenes/icon.png" alt="">
+        <h1>Nombre Artista</h1>
+        <button class="cabecera-menu-button">
+            <div class="cabecera-hamburguesa-div"></div>
+            <div class="cabecera-hamburguesa-div"></div>
+            <div class="cabecera-hamburguesa-div"></div>
+        </button>
+        <nav class="cabecera-nav">
+            <ul class="cabecera-nav-ul"> 
+                <li><a href="Home">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="My Work">My Work</a></li>
+                <li><button><a href="Contact">Contact</a></button>
                 </li>
             </ul>
+        </nav>
+    </header>
+    <main>
+        <section name="About Me" class="aboutMe-section">
+            <div class="text">
+                <h1>About Me</h1>
+                <p> Lorem Ipsum es simplemente el texto de relleno  especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+
+                </p>
+            </div>
+            <div class="aboutMe-imagen">
+                <img class="aboutMe-picture" src="./imagenes/about.png" alt="">
+            </div>
         </section>
-
-		<h2>My Latest Work</h2>
-        <ol>
-            <li>
-                Pictures of cartagena
-            </li>
-            <li>
-                Pictures of San Andres
-            </li>
-        </ol>
-
-		<h2 id="contact">Contact Me</h2>
-		<form onsubmit=" return simularAccionFormulario()">
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name" required>
-
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required>
-
-			<label for="message">Message:</label>
-			<textarea id="message" name="message" required></textarea>
-
-            <select name="city" id="city">
-                <option value="armenia">Armenia</option>
-                <option value="bogota">Bogota</option>
-                <option value="medellin">Medellin</option>
-                <option value="buenaventura">Buenaventura</option>
-            </select>
-
-			<input type="submit" value="Submit">
-		</form>
-	</main>
-
-	<footer>
-		<p>&copy; 2023 My Artist Page</p>
-	</footer>
-<script type="js" src="./accion-formulario.js"></script>
+        <section name="My Work">
+            <h1>My Work</h1>
+            <p>Small section about my work and some pictures to showcase it</p>
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" 
+                          name="slide" aria-hidden="true" hidden="" checked="checked">
+                    <div class="slide-item">
+                        <img src="https://aaagameartstudio.com/wp-content/uploads/2021/06/3d-art-final-render-concept-art-2d-concept-artist-jobs-2d-concept-artist-outsource-service-studio-art-for-games.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-2" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="https://wallpaperaccess.com/full/1713227.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-3" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="https://wallpaperaccess.com/full/1713224.jpg">
+                    </div>
+                    <label for="slide-3" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-1" class="slide-control next control-3">›</label>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="contact" name="Contact">
+            <h1>Contact</h1>
+            <form class="contact-form" action="">
+                <div> <label for="Name">Name</label>
+                    <input  name="Name" class="input-box margin" type="text" placeholder="Name"></div>
+               
+                <div> <label for="Email">Email</label>
+                <input name="Email" class="input-box margin" type="email" placeholder="Email"></div>
+               
+                <div><label for="Tel">Cel</label>
+                <input name="Tel" class="input-box margin" type="tel" placeholder="Cel"></div>
+                
+                <div class="contact-submit"><input class="button-submit" type="submit"></div>
+                
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        &copy; Carlos Cardona
+    </footer>
+<script src="scripts.js"></script>
 </body>
 </html>
